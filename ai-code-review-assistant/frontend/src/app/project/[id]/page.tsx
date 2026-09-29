@@ -69,7 +69,7 @@ export default function ProjectPage() {
         if (fileInput?.files) {
           const formData = new FormData();
           formData.append('type', uploadType);
-          formData.append('projectId', params.id);
+          formData.append('projectId', String(params.id));
           for (const file of fileInput.files) {
             formData.append('files', file);
           }
