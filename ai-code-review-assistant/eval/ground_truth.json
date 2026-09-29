@@ -1,0 +1,154 @@
+[
+  {
+    "file": "auth_bug_01.py",
+    "template": "security",
+    "bugs": [
+      {
+        "type": "sql_injection",
+        "line": 7,
+        "description": "SQL injection vulnerability using string concatenation"
+      },
+      {
+        "type": "hardcoded_credential",
+        "line": 14,
+        "description": "Hardcoded API key in source code"
+      }
+    ]
+  },
+  {
+    "file": "performance_bug_01.py",
+    "template": "performance",
+    "bugs": [
+      {
+        "type": "inefficient_algorithm",
+        "line": 4,
+        "description": "O(n^2) nested loop should be O(n) with set"
+      },
+      {
+        "type": "n_plus_one_query",
+        "line": 13,
+        "description": "N+1 query problem - database query inside loop"
+      },
+      {
+        "type": "blocking_operation",
+        "line": 20,
+        "description": "Blocking sleep operation without async/await"
+      }
+    ]
+  },
+  {
+    "file": "quality_bug_01.py",
+    "template": "code_quality",
+    "bugs": [
+      {
+        "type": "poor_naming",
+        "line": 2,
+        "description": "Poor function naming 'calcdistance' should be 'calculateDistance'"
+      },
+      {
+        "type": "magic_number",
+        "line": 6,
+        "description": "Magic number 3.14159 should be named PI"
+      },
+      {
+        "type": "code_duplication",
+        "line": 10,
+        "description": "Duplicated code - add() and sum_numbers() do the same thing"
+      },
+      {
+        "type": "missing_error_handling",
+        "line": 16,
+        "description": "Missing error handling for division by zero"
+      },
+      {
+        "type": "complex_function",
+        "line": 20,
+        "description": "Complex nested if-else structure should be refactored"
+      }
+    ]
+  },
+  {
+    "file": "xss_bug_01.js",
+    "template": "security",
+    "bugs": [
+      {
+        "type": "xss_vulnerability",
+        "line": 4,
+        "description": "XSS vulnerability - innerHTML with user input"
+      },
+      {
+        "type": "hardcoded_credential",
+        "line": 9,
+        "description": "Hardcoded API key"
+      },
+      {
+        "type": "missing_error_handling",
+        "line": 14,
+        "description": "Missing error handling for JSON.parse"
+      }
+    ]
+  },
+  {
+    "file": "input_validation_bug_01.py",
+    "template": "security",
+    "bugs": [
+      {
+        "type": "input_validation",
+        "line": 7,
+        "description": "No input validation on user query parameter"
+      },
+      {
+        "type": "file_validation",
+        "line": 14,
+        "description": "No file type or size validation on upload"
+      }
+    ]
+  },
+  {
+    "file": "memory_leak_01.js",
+    "template": "performance",
+    "bugs": [
+      {
+        "type": "memory_leak",
+        "line": 6,
+        "description": "Memory leak - data keeps growing without cleanup"
+      },
+      {
+        "type": "inefficient_operation",
+        "line": 12,
+        "description": "Inefficient array creation in loop"
+      },
+      {
+        "type": "event_listener_leak",
+        "line": 20,
+        "description": "Event listener never removed - memory leak"
+      }
+    ]
+  },
+  {
+    "file": "hardcoded_secret_01.ts",
+    "template": "security",
+    "bugs": [
+      {
+        "type": "hardcoded_credential",
+        "line": 4,
+        "description": "Hardcoded database password"
+      },
+      {
+        "type": "hardcoded_credential",
+        "line": 15,
+        "description": "Hardcoded AWS access key ID"
+      },
+      {
+        "type": "hardcoded_credential",
+        "line": 16,
+        "description": "Hardcoded AWS secret key"
+      }
+    ]
+  },
+  {
+    "file": "clean_01.py",
+    "template": "security",
+    "bugs": []
+  }
+]
